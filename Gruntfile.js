@@ -9,9 +9,8 @@ module.exports = function (grunt) {
                 files: {
                     src: [
                         'Gruntfile.js',
-                        'tasks/**/*.js',
-                        'test/*.js',
-                        'test/fixtures/*/*.js'
+                        'lib/**/*.js',
+                        'test/**/*.js'
                     ]
                 }
             }
@@ -25,9 +24,8 @@ module.exports = function (grunt) {
                 files: {
                     src: [
                         'Gruntfile.js',
-                        'tasks/**/*.js',
-                        'test/*.js',
-                        'test/fixtures/*/*.js'
+                        'lib/**/*.js',
+                        'test/**/*.js'
                     ]
                 }
             }
