@@ -60,8 +60,9 @@ application:
 
 ## Tests
 
+    $ npm install -g grunt-cli
     $ npm install --dev
-    $ make test
+    $ grunt test
 
 ## Credits
 
