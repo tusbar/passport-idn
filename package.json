@@ -1,0 +1,49 @@
+{
+  "name": "passport-idn",
+  "version": "0.1.0",
+  "description": "La Poste IDN (Identité Numérique) authentication strategy for Passport.",
+  "keywords": [
+    "passport",
+    "idn",
+    "laposte",
+    "auth",
+    "authn",
+    "authentication",
+    "identity"
+  ],
+  "author": {
+    "name": "Bertrand Marron",
+    "email": "bertrand.marron@gmail.com",
+    "url": "https://github.com/tusbar"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/tusbar/passport-idn.git"
+  },
+  "bugs": {
+    "url": "http://github.com/tusbar/passport-idn/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "dependencies": {
+    "passport-oauth2": "^1.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.1",
+    "chai": "^2.2.0",
+    "grunt": "^0.4.5",
+    "load-grunt-tasks": "^3.1.0",
+    "grunt-jscs": "^1.6.0",
+    "grunt-contrib-jshint": "^0.11.1",
+    "grunt-mocha": "^0.4.12",
+    "grunt-mocha-test": "^0.12.7"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}
