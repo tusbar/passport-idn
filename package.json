@@ -29,8 +29,10 @@
     "passport-oauth2": "^1.1.2"
   },
   "devDependencies": {
+    "codecov": "^3.1.0",
     "jest": "^23.6.0",
     "jest-junit": "^5.2.0",
+    "lerna-changelog": "^0.8.2",
     "xo": "^0.23.0"
   },
   "jest": {
@@ -65,5 +67,18 @@
         ]
       }
     ]
+  },
+  "changelog": {
+    "cacheDir": ".changelog",
+    "labels": {
+      "bug": ":bug: Bug Fix",
+      "build": ":building_construction: Build Process",
+      "cleanup": ":shower: Cleanup",
+      "documentation": ":memo: Documentation",
+      "enhancement": ":rocket: Enhancement",
+      "performance": ":racehorse: Performance",
+      "security": ":policeman: Security"
+    },
+    "repo": "tusbar/passport-idn"
   }
 }
