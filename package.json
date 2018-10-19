@@ -2,6 +2,7 @@
   "name": "passport-idn",
   "version": "0.1.1",
   "description": "La Poste IDN (Identité Numérique) authentication strategy for Passport.",
+  "main": "./lib",
   "keywords": [
     "passport",
     "idn",
@@ -11,6 +12,9 @@
     "authentication",
     "identity"
   ],
+  "scripts": {
+    "test": "grunt test"
+  },
   "author": {
     "name": "Bertrand Marron",
     "email": "bertrand.marron@gmail.com",
@@ -29,20 +33,19 @@
       "url": "http://www.opensource.org/licenses/MIT"
     }
   ],
-  "main": "./lib",
   "dependencies": {
     "passport-oauth2": "^1.1.2"
   },
   "devDependencies": {
-    "mocha": "^2.2.1",
     "chai": "^2.2.0",
     "grunt": "^0.4.5",
+    "grunt-mocha-test": "^0.12.7",
     "load-grunt-tasks": "^3.1.0",
-    "grunt-jscs": "^1.6.0",
-    "grunt-contrib-jshint": "^0.11.1",
-    "grunt-mocha-test": "^0.12.7"
+    "mocha": "^2.2.1",
+    "xo": "^0.23.0"
   },
-  "scripts": {
-    "test": "grunt test"
+  "xo": {
+    "semicolon": false,
+    "space": 2
   }
 }
