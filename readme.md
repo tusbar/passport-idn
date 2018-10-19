@@ -1,13 +1,9 @@
-# passport-idn
+# passport-idn [![CircleCI](https://circleci.com/gh/tusbar/passport-idn.svg?style=svg)](https://circleci.com/gh/tusbar/passport-idn)
 
 [![npm version](https://badgen.net/npm/v/passport-idn)](https://www.npmjs.com/package/passport-idn)
 [![dependencies Status](https://badgen.net/david/dep/tusbar/passport-idn)](https://david-dm.org/tusbar/passport-idn)
 [![codecov](https://badgen.net/codecov/c/github/tusbar/passport-idn)](https://codecov.io/gh/tusbar/passport-idn)
 [![XO code style](https://badgen.net/badge/code%20style/XO/cyan)](https://github.com/xojs/xo)
-
-[![Build Status](https://secure.travis-ci.org/tusbar/passport-idn.svg?branch=master)](https://travis-ci.org/tusbar/passport-idn)
-[![Dependencies Status](https://david-dm.org/tusbar/passport-idn.svg)](https://david-dm.org/tusbar/passport-idn)
-[![Dev Dependencies Status](https://david-dm.org/tusbar/passport-idn/dev-status.svg)](https://david-dm.org/tusbar/passport-idn#info=devDependencies)
 
 [Passport](http://passportjs.org/) strategy for authenticating with [La Poste IDN](https://developpeurs.idn.laposte.fr) using the OAuth 2.0 API.
 

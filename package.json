@@ -2,7 +2,10 @@
   "name": "passport-idn",
   "version": "0.1.1",
   "description": "La Poste IDN (Identité Numérique) authentication strategy for Passport.",
-  "main": "./lib",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
   "keywords": [
     "passport",
     "idn",
@@ -12,40 +15,55 @@
     "authentication",
     "identity"
   ],
-  "scripts": {
-    "test": "grunt test"
-  },
-  "author": {
-    "name": "Bertrand Marron",
-    "email": "bertrand.marron@gmail.com",
-    "url": "https://github.com/tusbar"
-  },
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/tusbar/passport-idn.git"
-  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "license": "MIT",
+  "author": "Bertrand Marron <bertrand.marron@gmail.com> (https://github.com/tusbar)",
+  "repository": "http://github.com/tusbar/passport-idn.git",
   "bugs": {
     "url": "http://github.com/tusbar/passport-idn/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/MIT"
-    }
-  ],
   "dependencies": {
     "passport-oauth2": "^1.1.2"
   },
   "devDependencies": {
-    "chai": "^2.2.0",
-    "grunt": "^0.4.5",
-    "grunt-mocha-test": "^0.12.7",
-    "load-grunt-tasks": "^3.1.0",
-    "mocha": "^2.2.1",
+    "jest": "^23.6.0",
+    "jest-junit": "^5.2.0",
     "xo": "^0.23.0"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/__helpers__/",
+      "/__fixtures__/"
+    ],
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "output": "reports/tests/junit.xml"
+        }
+      ]
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov",
+      "text-summary"
+    ]
   },
   "xo": {
     "semicolon": false,
-    "space": 2
+    "space": 2,
+    "overrides": [
+      {
+        "files": "__tests__/**/*.js",
+        "envs": [
+          "jest"
+        ]
+      }
+    ]
   }
 }
