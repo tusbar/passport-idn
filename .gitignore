@@ -1,1 +1,15 @@
-node_modules/
+# Logs
+*.log
+npm-debug.log*
+CHANGELOG.md
+
+# Cache
+.yarn-cache
+.changelog
+
+# Node
+node_modules
+
+# Reports
+coverage
+reports
