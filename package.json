@@ -1,6 +1,6 @@
 {
   "name": "passport-idn",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "La Poste IDN (Identité Numérique) authentication strategy for Passport.",
   "main": "index.js",
   "scripts": {
